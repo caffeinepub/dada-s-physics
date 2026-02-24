@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Cosmic Deep Blue theme for physics education */
+    --background: 0.98 0.01 240;
+    --foreground: 0.18 0.02 250;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.02 250;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.02 250;
+    /* Deep navy blue primary */
+    --primary: 0.35 0.12 250;
+    --primary-foreground: 0.98 0.01 240;
+    /* Light blue-gray secondary */
+    --secondary: 0.92 0.02 240;
+    --secondary-foreground: 0.25 0.08 250;
+    /* Muted blue-gray */
+    --muted: 0.95 0.01 240;
+    --muted-foreground: 0.48 0.03 250;
+    /* Warm amber accent for enlightenment */
+    --accent: 0.72 0.15 65;
+    --accent-foreground: 0.15 0.02 250;
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+    --border: 0.88 0.02 240;
+    --input: 0.88 0.02 240;
+    --ring: 0.35 0.12 250;
+    --success: 0.65 0.14 150;
+    --success-foreground: 0.98 0 0;
+    --chart-1: 0.55 0.18 250;
+    --chart-2: 0.68 0.16 65;
+    --chart-3: 0.45 0.12 280;
+    --chart-4: 0.58 0.14 180;
+    --chart-5: 0.62 0.11 210;
+  }
+
+  .dark {
+    /* Dark mode: observatory at night */
+    --background: 0.12 0.03 250;
+    --foreground: 0.95 0.01 240;
+    --card: 0.18 0.04 250;
+    --card-foreground: 0.95 0.01 240;
+    --popover: 0.15 0.04 250;
+    --popover-foreground: 0.95 0.01 240;
+    /* Bright cyan-blue primary for dark */
+    --primary: 0.68 0.15 240;
+    --primary-foreground: 0.12 0.03 250;
+    /* Dark blue-gray secondary */
+    --secondary: 0.22 0.04 250;
+    --secondary-foreground: 0.95 0.01 240;
+    /* Muted dark */
+    --muted: 0.25 0.03 250;
+    --muted-foreground: 0.62 0.02 240;
+    /* Bright amber accent */
+    --accent: 0.78 0.18 55;
+    --accent-foreground: 0.12 0.03 250;
+    --destructive: 0.62 0.24 28;
+    --destructive-foreground: 0.98 0 0;
+    --border: 0.28 0.04 250;
+    --input: 0.28 0.04 250;
+    --ring: 0.68 0.15 240;
+    --success: 0.68 0.16 150;
+    --success-foreground: 0.12 0.03 250;
+    --chart-1: 0.65 0.18 240;
+    --chart-2: 0.75 0.18 60;
+    --chart-3: 0.58 0.14 280;
+    --chart-4: 0.65 0.15 180;
+    --chart-5: 0.68 0.12 210;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+}
+
+@layer utilities {
+  .physics-equation {
+    font-family: 'STIX Two Math', 'Cambria Math', serif;
+    font-style: italic;
+  }
+}
